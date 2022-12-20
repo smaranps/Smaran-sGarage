@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .img1{
+            width: 500px;
+        }
+        img:hover{
+            opacity: 0.6;
+        }
+        .flex-cont{
+            display: flex;
+            flex-direction: row;
+      
+        }
+        #div1{          
+              background-color: gray;
+            font-family: cursive;
+            padding: 15px;
+            color: white;
+        }
+        #div3{
+            background-color: white;
+            color: black;
+            text-align: center;
+            width: 1500px;
+            height: 500;
+        }
+        #div2{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+                }
+                #div4{
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    background-image: url("https://previews.123rf.com/images/anyvidstudio/anyvidstudio1508/anyvidstudio150800110/44371546-hand-tools-kit-on-black-background.jpg");
+                    height: 700px;
+                    color: gainsboro;
+                    background-color: gray;
+                    border: 4px solid black;
+
+                    background-size: cover;
+                }
+                #h21{
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: gainsboro;
+                    background-color: gray;
+                    border: 4px solid black;
+
+            
+                }
+                h2{
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: white;
+                }
+        body{
+            background-size: cover;
+            background-image: url("data:image/jpeg;base64,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");
+      
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            font-family: cursive;
+            border: 4px double black;
+        }
+        .a1{
+            color: white;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            background-image: url(https://media4.giphy.com/media/l0IylrgSxsjFn77W0/giphy.gif?cid=6c09b9526943ef6793cb3a93bcca4d3a57e2bccaf8216a45&rid=giphy.gif&ct=g) ;
+            
+            padding: 300px;
+            background-size: cover;
+            margin-bottom: 100px;
+        }
+        .flex-container{
+            background-color: transparent;
+            display: flex;
+        }
+        .flex-item{
+            border: 4px solid white;
+            width: 200px;
+            height: 300px;
+            margin-left: 300px;
+        }
+        .flex-item2{
+            border: 4px solid white;
+            width: 200px;
+            height: 300px;
+            margin-left: 100px;
+         
+        }
+        form{
+            margin-left: 500px;
+            font-family: monospace;
+        }
+        #sub{
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            width: 300px;
+            margin-left: 50px;
+        }
+        #sub:hover{
+            opacity: 0.6;
+        }
+
+        #p1{
+            background-color: grey;
+            border: 4px solid black;
+            text-align: center;
+            width: 500px;
+            padding: 25px;
+            margin-left: 500px;
+            height: 400px;
+    
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        img:hover{
+            opacity: 0.6;
+        }
+        #id{
+            width: 300px;
+            height: 100px;
+        }
+        h3{
+            text-align: center;
+        }
+        #div5{
+            background-color: gainsboro;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            height: 650px;
+        }
+        #h22{
+            color: black;
+        }
+
+    
+        </style>
+<head>
+
+    <title>Smaran's Car Services.</title>
+    <div id="div1">
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <label><a class="a1" href="index.html">Home</a></label>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <label><a class="a1" href="Services.html">Services</a></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+         <label><a class="a1" href="Our Work.html">Our work</a></label>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <label><a class="a1" href="About us.html">About us</a></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <label><a class="a1" href="BookAnAppointment.html">Contact us</a></label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+         <label><a class="a1" href="">Book online</a></label>
+    </div>
+
+</head>
+<body>
+    <div><h1>Smaran's Garage</h1></div>
+    <div id="div2">
+        <h2>Services</h2>
+        <br>
+        <br>
+        <br>
+        <div class="flex-container">
+<div class="flex-item">
+    <h3>Repairs</h3>
+    <br>
+    <img src="https://www.citypng.com/public/uploads/preview/settings-repair-white-icon-png-11640708704avnhwiiytt.png" width="100px">
+    <p>We do all sorts of repairs. From old cars to luxury cars, we have it all.</p>
+</div>
+<div class="flex-item2">
+    <h3>Upholestry</h3>
+    <br>
+    <img src="https://dealerinspire-image-library-prod.s3.us-east-1.amazonaws.com/images/IOnURMEHbpXs3AZ4p2VLC6v52EoQcC9txo4Kp9o1.png" width="100px">
+    <p>We have some of the best upholstery in town. This is one of the seats we did. We use fabric that is fresh and would look stylish. </p>
+</div>
+<div class="flex-item2">
+    <h3>Painting</h3>
+    <br>
+    <img src="https://data.whicdn.com/images/285865590/original.jpg" width="100px">
+    <p>We do the best painting. Look at one of our custom paintings we did on this Range Rover!</p></div>
+
+        </div>
+        
+    </div>
+    <div id="div3">
+        <h2 style="font-family: verdana; color: black;">Our Work</h2>
+        <br>
+        <p>______   ______</p>
+        <br>
+        <br>
+        <p>These are cars that we've worked on so far!</p>
+        <br>
+        <br>
+        <br>
+        <div class="flex-cont">
+        <div class="flex-img"> <img class="img1" src="https://media.zenfs.com/en/autoblog_50/9507a64cfd6d299a8a0e27bc96b549a2" width="500px"></div>
+      
+        <div class="flex-img"> <img class="img1" src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ikTj6fAn7WoM/v0/1200x-1.jpg" width="500px"></div>
+       
+        <div class="flex-img"> <img class="img1" src="https://i.insider.com/53ab1124eab8ea670c084287?width=1136&format=jpeg" width="500px"><br/></div>
+    </div> 
+  
+    </div>
+    <div id="div4">
+        <h2 id="h21">About us</h2>
+        <br>
+        <br>
+        <br>
+        <label>______ ______</label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="p1">
+            
+            
+            We are Smaran's garage. Found and established in 2022 by Smaran Pinisetty. Eventhough we aren't that old of a company,
+            we did some amazing work as you can see based on the images. We use quality materials that make your ride look gorgeus and
+            speedy. Not only do we customize cars, we also repair them. Sometimes, when we are bored, we work on new concept cars.
+            We are a team of 400,000 people. There are over 300,000 shops all around the world. Is your car broken? If you want to book online,
+            book an appointment below. If you wan't to come to our store, don't hesitate to bring your car over! We will guarantee you
+            that your car will be fixed within 1-5 hours depending on how bad the issue is for your car.We can fix almost any car in the planet.
+            We also have engines. If your engine broke, we can replace it with a new and better looking engine. Our engines give your car twice 
+            as much as performance than your older one. If you are thinking that our repairs should be high because of all the things we offer 
+            right? If you did, you ARE WRONG! You will get a 50% off on your first repair plus a freee inspection that you can use whenever you want.
+             Stay tuned for more updates!
+        </p>
+
+    </div>
+    <div id="div5">
+        <h2 id="h22">Book an appointment.</h2>
+        <br>
+        <br>
+        <img src="https://i.gifer.com/EaD.gif" width="300px">
+        <br>
+        <br>
+        <fieldset>
+        <form>
+            Name:<input type="text" id="name" placeholder="First name" required> &nbsp;<input type="text" placeholder="Last name" required>
+            <br>
+            <br>
+           Time: <input type="text" id="time" placeholder="Time" required>
+           <br>
+           <br>
+           Date: <input type="date" id="date" required>
+           <br>
+           <br>
+           Select Locations: <br>
+           <select name="Locations" id="locations">
+            <option value="Toronto">Toronto</option>
+            <option value="New York">New York</option>
+            <option value="Vancouver">Vancouver</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Edmonton">Edmonton</option>
+            <option value="Philadelphia">Philadelphia</option>
+            <option value="Victoria">Victoria</option>
+           </select>
+           <br>
+           <br>
+           Email: <input type="email" placeholder="E-mail" id="Email" required>
+           <br>
+           <br>
+           Message: <input type="text" id="id" placeholder="Message"  required>
+           <br>
+           <br>
+           <input id="sub" type="submit" value="Book">
+           <br>
+        </form>
+    </fieldset>
+    </div>
+</body>
+<script>
+    function submit(){
+        var a = document.getElementById("name")
+        var b =document.getElementById("time")
+        var c = document.getElementById("date")
+        var d = document.getElementById("locations")
+        var e = document.getElementById("Email")
+        var f = document.getElementById("id")
+       document.getElementById("p9").innerHTML = "You have booked an appointment. Our representative will contact you soon."
+    }
+</script>
+<footer>
+<p>Copyright @2022-2023- Smaran's Garage.Ltd All rights reserved.</p>
+<p>Made using Microsoft Visual Studio code.</p>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
